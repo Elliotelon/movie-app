@@ -16,6 +16,7 @@
 		953AA8BA29B0525A003B236E /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953AA8B929B0525A003B236E /* UpcomingViewController.swift */; };
 		953AA8BD29B05285003B236E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953AA8BC29B05285003B236E /* SearchViewController.swift */; };
 		953AA8BF29B052CA003B236E /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953AA8BE29B052CA003B236E /* DownloadsViewController.swift */; };
+		953AA8C629B08F6E003B236E /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953AA8C529B08F6E003B236E /* CollectionViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		953AA8B929B0525A003B236E /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		953AA8BC29B05285003B236E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		953AA8BE29B052CA003B236E /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		953AA8C529B08F6E003B236E /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,11 @@
 		953AA8A129B04C91003B236E /* Movie App */ = {
 			isa = PBXGroup;
 			children = (
+				953AA8C429B08F36003B236E /* Managers */,
+				953AA8C329B08F2D003B236E /* Resources */,
+				953AA8C229B08F15003B236E /* Models */,
+				953AA8C129B08F0B003B236E /* ViewModels */,
+				953AA8C029B08F02003B236E /* Views */,
 				953AA8B629B051F4003B236E /* Controllers */,
 				953AA8A229B04C92003B236E /* AppDelegate.swift */,
 				953AA8A429B04C92003B236E /* SceneDelegate.swift */,
@@ -82,6 +89,42 @@
 				953AA8BE29B052CA003B236E /* DownloadsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		953AA8C029B08F02003B236E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				953AA8C529B08F6E003B236E /* CollectionViewTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		953AA8C129B08F0B003B236E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		953AA8C229B08F15003B236E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		953AA8C329B08F2D003B236E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		953AA8C429B08F36003B236E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +199,7 @@
 			files = (
 				953AA8BD29B05285003B236E /* SearchViewController.swift in Sources */,
 				953AA8A729B04C92003B236E /* MainTabBarViewController.swift in Sources */,
+				953AA8C629B08F6E003B236E /* CollectionViewTableViewCell.swift in Sources */,
 				953AA8BF29B052CA003B236E /* DownloadsViewController.swift in Sources */,
 				953AA8A329B04C92003B236E /* AppDelegate.swift in Sources */,
 				953AA8A529B04C92003B236E /* SceneDelegate.swift in Sources */,
