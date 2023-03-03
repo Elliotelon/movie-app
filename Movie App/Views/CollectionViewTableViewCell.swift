@@ -57,6 +57,19 @@ class CollectionViewTableViewCell: UITableViewCell {
             
         }
     }
+    
+    private func downloadTitleAt(indexPath: IndexPath){
+        
+        DataPersistenceManager.shared.downloadTitleWith(model: titles[indexPath[1]]) { result in
+            switch result {
+            case .success():
+                NotificationCenter.default.post(name: NSNotification.Name("downloaded"), object: nil)
+            case .failure(let error):
+                print(error.localizedDescription)
+            
+            }
+        }
+    }
 }
 
 extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -95,4 +108,20 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
         }
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemsAt indexPaths: [IndexPath], point: CGPoint) -> UIContextMenuConfiguration? {
+        let config = UIContextMenuConfiguration(identifier: nil,previewProvider: nil) { [weak self] _ in
+            let downloadAction = UIAction(title: "다운로드", subtitle: nil, image: nil, identifier: nil, discoverabilityTitle: nil, state: .off) { _ in
+                print(indexPaths[0])
+                self?.downloadTitleAt(indexPath: indexPaths[0])
+               
+            }
+            return UIMenu(title: "", image: nil, identifier: nil, options: .displayInline, children: [downloadAction])
+        }
+        return config
+    }
+    
+    
+    
+    
 }
