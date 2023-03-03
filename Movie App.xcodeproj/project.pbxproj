@@ -26,6 +26,7 @@
 		953AA8D729B194E5003B236E /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 953AA8D629B194E5003B236E /* SDWebImageMapKit */; };
 		953AA8D929B1AADA003B236E /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953AA8D829B1AADA003B236E /* TitleTableViewCell.swift */; };
 		953AA8DB29B1ACEF003B236E /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953AA8DA29B1ACEF003B236E /* TitleViewModel.swift */; };
+		953AA8DD29B1B648003B236E /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953AA8DC29B1B648003B236E /* SearchResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		953AA8D129B193AD003B236E /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		953AA8D829B1AADA003B236E /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		953AA8DA29B1ACEF003B236E /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
+		953AA8DC29B1B648003B236E /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,6 @@
 				953AA8B629B051F4003B236E /* Controllers */,
 				953AA8A229B04C92003B236E /* AppDelegate.swift */,
 				953AA8A429B04C92003B236E /* SceneDelegate.swift */,
-				953AA8A629B04C92003B236E /* MainTabBarViewController.swift */,
 				953AA8AB29B04C93003B236E /* Assets.xcassets */,
 				953AA8AD29B04C93003B236E /* LaunchScreen.storyboard */,
 				953AA8B029B04C93003B236E /* Info.plist */,
@@ -101,10 +102,8 @@
 		953AA8B629B051F4003B236E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				953AA8BC29B05285003B236E /* SearchViewController.swift */,
-				953AA8B729B0522A003B236E /* HomeViewController.swift */,
-				953AA8B929B0525A003B236E /* UpcomingViewController.swift */,
-				953AA8BE29B052CA003B236E /* DownloadsViewController.swift */,
+				953AA8DF29B1B68A003B236E /* General */,
+				953AA8DE29B1B66E003B236E /* core */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -150,6 +149,26 @@
 				953AA8C929B17BF3003B236E /* APICaller.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		953AA8DE29B1B66E003B236E /* core */ = {
+			isa = PBXGroup;
+			children = (
+				953AA8A629B04C92003B236E /* MainTabBarViewController.swift */,
+				953AA8BC29B05285003B236E /* SearchViewController.swift */,
+				953AA8B729B0522A003B236E /* HomeViewController.swift */,
+				953AA8B929B0525A003B236E /* UpcomingViewController.swift */,
+				953AA8BE29B052CA003B236E /* DownloadsViewController.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		953AA8DF29B1B68A003B236E /* General */ = {
+			isa = PBXGroup;
+			children = (
+				953AA8DC29B1B648003B236E /* SearchResultsViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +257,7 @@
 				953AA8C829B0C516003B236E /* HeroHeaderUIView.swift in Sources */,
 				953AA8BF29B052CA003B236E /* DownloadsViewController.swift in Sources */,
 				953AA8A329B04C92003B236E /* AppDelegate.swift in Sources */,
+				953AA8DD29B1B648003B236E /* SearchResultsViewController.swift in Sources */,
 				953AA8CE29B18D42003B236E /* Extensions.swift in Sources */,
 				953AA8A529B04C92003B236E /* SceneDelegate.swift in Sources */,
 				953AA8BA29B0525A003B236E /* UpcomingViewController.swift in Sources */,
